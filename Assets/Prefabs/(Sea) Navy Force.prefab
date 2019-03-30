@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 3432917648286181870}
   - component: {fileID: 4800628901705236046}
   m_Layer: 5
-  m_Name: Card field
+  m_Name: Card rank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d465bd88e66696441b44a5fc0667c890, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9fe1e1cee1b7834d9d68c58643ef14d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -783,8 +783,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3567470001023332729}
   - component: {fileID: 4891106140524949250}
+  - component: {fileID: 1842453983703013831}
   m_Layer: 0
-  m_Name: Card (1)
+  m_Name: Navy Force
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -820,6 +821,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1842453983703013831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5458563659414603551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c772dcc10c0a59a49988057f1a236196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LinkedObject: {fileID: 0}
 --- !u!1 &5783935301085915701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1253,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 4d75f9c97f4fa494aa9fb1ce604797e3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
