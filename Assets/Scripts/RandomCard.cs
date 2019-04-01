@@ -49,7 +49,7 @@ public class RandomCard : MonoBehaviour
                      //TODO: Put message in game that user has no more cards
                     Debug.Log("No more cards");
                 }
-        
+
             cardClone = Instantiate(cardPrefab, transform.position, Quaternion.identity);
             cardClone.transform.SetParent(GameObject.Find("Hand").transform);
             actionPoints--;
