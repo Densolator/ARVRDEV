@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class CardDisplay : MonoBehaviour {
 
-	public Card card;
 
 	public Text nameText;
 	public Text descriptionText;
@@ -16,16 +15,22 @@ public class CardDisplay : MonoBehaviour {
 	public Text attackText;
 	public Text valueText;
 
-	// Use this for initialization
-	void Start () {
-		nameText.text = card.name;
-		descriptionText.text = card.description;
+    [SerializeField] private Card[] cards;
 
-		artworkImage.sprite = card.artwork;
+    
 
-        defenseText.text = "Def: " + card.defense.ToString();
-		attackText.text = "Atk: " + card.attack.ToString();
-        valueText.text = card.value.ToString();
+    // Use this for initialization
+    void Start () {
+
+
+            int rand = Random.Range(0, cards.Length);
+            nameText.text = cards[rand].name;
+            descriptionText.text = cards[rand].description;
+            artworkImage.sprite = cards[rand].artwork;
+            defenseText.text = "Def: " + cards[rand].defense.ToString();
+            attackText.text = "Atk: " + cards[rand].attack.ToString();
+  
+       
 	}
 	
 }
