@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Private(1st Class)
   m_EditorClassIdentifier: 
   name: Ilbyong
-  description: Upgrades an Ibyong. Playable on Land
+  description: Playable on Land
   artwork: {fileID: 21300000, guid: cd07f406d81a43746948556ac9cc399b, type: 3}
-  defense: 7
+  defense: 2
   attack: 2
-  value: 1
+  value: 2
+  landscape: 1

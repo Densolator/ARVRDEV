@@ -15,6 +15,7 @@ MonoBehaviour:
   name: Ibyong
   description: Playable in Land
   artwork: {fileID: 21300000, guid: d9fe1e1cee1b7834d9d68c58643ef14d, type: 3}
-  defense: 5
-  attack: 1
+  defense: 1
+  attack: 2
   value: 1
+  landscape: 1

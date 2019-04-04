@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 4477535320817907195}
   - component: {fileID: 4477535320817907194}
   m_Layer: 5
-  m_Name: HP
+  m_Name: Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -245,8 +245,8 @@ GameObject:
   - component: {fileID: 4477535320903561905}
   - component: {fileID: 4477535320903561904}
   - component: {fileID: 4477535320903561907}
+  - component: {fileID: 4382876541263714883}
   - component: {fileID: 4477535320903561906}
-  - component: {fileID: 4477535320903561909}
   m_Layer: 5
   m_Name: Card 1
   m_TagString: Untagged
@@ -263,7 +263,7 @@ RectTransform:
   m_GameObject: {fileID: 4477535320903561911}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -4.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4477535319876239122}
   - {fileID: 4477535321932625408}
@@ -348,21 +348,7 @@ MonoBehaviour:
   m_FlexibleWidth: 0
   m_FlexibleHeight: 0
   m_LayoutPriority: 1
---- !u!114 &4477535320903561906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4477535320903561911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 575520a554eda4b4b818db160edbc70d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentToReturnTo: {fileID: 0}
-  placeholderParent: {fileID: 0}
---- !u!114 &4477535320903561909
+--- !u!114 &4382876541263714883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -380,14 +366,48 @@ MonoBehaviour:
   defenseText: {fileID: 4477535321810403023}
   attackText: {fileID: 4477535321126746196}
   valueText: {fileID: 4477535320817907194}
-  cards:
+  typeText: {fileID: 0}
+  poolOfCards:
+  - {fileID: 11400000, guid: fd7edd7587007e640a6241b00c174d95, type: 2}
+  - {fileID: 11400000, guid: 75657766121f5114e87eb6e31f2d1d42, type: 2}
+  - {fileID: 11400000, guid: 308e17c938afaae46a4685fbc34b323b, type: 2}
+  - {fileID: 11400000, guid: 957b5474466ac234ba3721b66698d622, type: 2}
+  - {fileID: 11400000, guid: becf5ecda6710044eb0e0c028c073f8c, type: 2}
+  - {fileID: 11400000, guid: acc1b577b9871c74499f4f938025f1ee, type: 2}
+  - {fileID: 11400000, guid: fe5b5c2c0c3f4c94b89bc1ff5af364cc, type: 2}
+  - {fileID: 11400000, guid: 55c937bffede55b4080c86cdc426761b, type: 2}
+  - {fileID: 11400000, guid: ec60356f384f53a4ab118f5d5daa0ea7, type: 2}
+  - {fileID: 11400000, guid: 75fa200c9b2d82b43a7d1c648cd4e79b, type: 2}
+  - {fileID: 11400000, guid: e07e9d40bbeb44944877e7c66f9f0c94, type: 2}
+  - {fileID: 11400000, guid: b5a36b55b093d6245a1327c32014434a, type: 2}
+  - {fileID: 11400000, guid: 6b4d56a704d4b964d900201fcf30a13b, type: 2}
+  - {fileID: 11400000, guid: 5c1bc42d9cae20649ae4d223313b0309, type: 2}
+  - {fileID: 11400000, guid: 11f85b15172dff64799a736db73732e6, type: 2}
+  - {fileID: 11400000, guid: 803429eb5f79d8c428acd89d3ec0c8b8, type: 2}
   - {fileID: 11400000, guid: aab60ec8807c3d748a7528bae514a093, type: 2}
   - {fileID: 11400000, guid: a9436067d6b29974ea20639b7356dfa4, type: 2}
   - {fileID: 11400000, guid: fa0a88693bef5024888182466f13d9e3, type: 2}
   - {fileID: 11400000, guid: 8c07a27c9ea27794d95acc25178f10af, type: 2}
-  - {fileID: 11400000, guid: e6e9868ed3d6ee0449d5b481c27dd71d, type: 2}
-  - {fileID: 11400000, guid: 55c937bffede55b4080c86cdc426761b, type: 2}
   - {fileID: 11400000, guid: 9f363f93cc4f52846966d786c6855c89, type: 2}
+  - {fileID: 11400000, guid: bb0cd4eac8c762f459fd17ee2fc07f79, type: 2}
+  - {fileID: 11400000, guid: e6e9868ed3d6ee0449d5b481c27dd71d, type: 2}
+  - {fileID: 11400000, guid: a47112672d0748e4aaf4203ad951eb10, type: 2}
+  - {fileID: 11400000, guid: 2ac873c68eba0c14eb1a38bc335e20f4, type: 2}
+  - {fileID: 11400000, guid: c4f82b76218fc96489dbf0bb8c5ef227, type: 2}
+--- !u!114 &4477535320903561906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4477535320903561911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 575520a554eda4b4b818db160edbc70d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentToReturnTo: {fileID: 0}
+  placeholderParent: {fileID: 0}
 --- !u!1 &4477535321126746198
 GameObject:
   m_ObjectHideFlags: 0

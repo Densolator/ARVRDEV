@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Sergeant Major
   m_EditorClassIdentifier: 
   name: Chium Sangsa
-  description: Upgrades a Sangsa. Playable in Land
+  description: Playable in Land
   artwork: {fileID: 21300000, guid: fbe8633187282d64398d3ce0cdc73047, type: 3}
-  defense: 10
-  attack: 5
-  value: 1
+  defense: 4
+  attack: 4
+  value: 2
+  landscape: 1

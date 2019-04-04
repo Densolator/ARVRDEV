@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Master Sergeant
   m_EditorClassIdentifier: 
   name: Sangsa
-  description: Upgrades a Hasa. Playable in Land
+  description: Playable in Land
   artwork: {fileID: 21300000, guid: 9928278ff47c4cd4bb24ed27a286a58e, type: 3}
-  defense: 8
-  attack: 4
+  defense: 3
+  attack: 3
   value: 1
+  landscape: 1
